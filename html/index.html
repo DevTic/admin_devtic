@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <!-- BoxIcons -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="../dist/css/styles.css">
+    <title>admin-devtic</title>
+</head>
+
+<body>
+    <div class="wraper">
+        <!-- SIDEBAR -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h4>Admin-Devtic</h4>
+            </div>
+            <ul class="list-unstyled menu-items">
+                <li><a href="#"><i class="bx bxs-dashboard"></i> Dashboard</a></li>
+                <li><a href="#"><i class="bx bxs-user-rectangle"> Users</i></a></li>
+                <li><a href="#subMenu" id="dropdown" data-bs-toggle="collapse" aria-expanded="flase" class="dropdown-toggle" aria-controls="subMenu"><i class="bx bx-folder"> Pages</i></a></li>
+                <ul class="collapse list-unstyled" id="subMenu" aria-labelledby="dropdown">
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                </ul>   
+            </ul>
+        </nav>
+        <!-- NAVBAR -->
+        <div class="content container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="menuNav">
+                <div class="container-fluid">
+                    <i class="bx bx-menu" id="btnCollapse"></i>
+                    <div class="items-navbar" id="items-navbar">
+                        <input type="search" name="search" id="search" class="busqueda" placeholder="search...">
+                        <div class="dropdown">
+                            <i id="dropbtn" class="dropbtn bx bxs-bell"></i>
+                        </div>
+                        <div class="dropdown">
+                            <img src="../assets/img/perfil.jpg" alt="Perfil" id="imgBtn">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- MAIN CONTENT -->
+            <section class="container-fluid main-content">
+                <div class="row menu-perfil">
+                    <div class="items-perfil" id="items-perfil">
+                        <ul class="list-unstyled menu-items">
+                            <li><a href="#">Perfil</a></li>
+                            <li><a href="#">Datos</a></li>
+                            <li><a href="#">Cerrar Sesión</a></li>
+                        </ul>
+                    </div>
+                    <div id="dropdown-content" class="dropdown-content">
+                        <ul class="list-unstyled menu-notification">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="search" name="search" id="search-main" class="search-main busqueda" placeholder="search...">
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="txt-shape">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolorum officiis aliquam? Asperiores debitis harum cum nesciunt rerum facilis delectus doloremque accusantium blanditiis impedit, quibusdam et tenetur ea soluta itaque?
+                        Incidunt ab autem ut deserunt, facere eligendi repellendus consequuntur voluptates voluptatum explicabo, nam tempora expedita minima consequatur harum, veritatis exercitationem distinctio dolore. Culpa cumque distinctio praesentium corporis eius consequuntur officia.
+                        Natus voluptatum repudiandae explicabo recusandae! Vitae tempore quam perspiciatis dignissimos modi. Consectetur repellat modi nihil voluptates ipsum soluta, doloribus labore, hic porro amet officia. Reiciendis aperiam labore neque eos minus!</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="txt-shape">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fugit repellendus aliquid odio, quasi minima aut incidunt natus autem quod labore vel deleniti itaque. Sit temporibus aut dignissimos quia qui.
+                            Perspiciatis pariatur architecto saepe, recusandae eos rem laborum itaque optio ea esse, ducimus voluptatem cumque libero! Maiores ipsum eos aliquid vitae cupiditate earum explicabo temporibus iusto. Provident doloribus nostrum magnam.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="txt-shape">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam mollitia, ex numquam aliquid amet commodi unde illum laborum? Tempore, impedit inventore odit ab incidunt id ipsa laborum eius hic enim.
+                            Repellendus deleniti vel sint magnam voluptatum eius laborum aperiam repudiandae illo molestiae cumque enim placeat nobis, architecto dolores esse sapiente doloremque numquam commodi accusamus delectus! Cupiditate culpa voluptatem dolorum ratione?
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="../dist/js/main.js"></script>
+</body>
+
+</html>
